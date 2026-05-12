@@ -358,13 +358,20 @@ main {
     display: block;
     margin: 40px auto;
     padding: 12px 25px;
-    background-color: transparent;
+    background-color: #DC780B;
     border: 1px solid #DC780B;
-    color: #DC780B;
+    color: #000000;
+    transition: 0.3;
+
+}
+
+.learn-more:hover{
+    transform: scale(1.05);
+  z-index: 10;
 }
 
 .learn-more a {
-    color: #DC780B;
+    color: #ffffff;
     font-weight: 500;
 }
 
@@ -458,13 +465,19 @@ main {
     color: rgba(21, 12, 1, 1);
 }
 
-.take_mini_text {
+span{
+    color: black;
+    font-size: 20px;
+}
+
+.take_mini_text  {
     font-family: Roboto;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     color: rgba(21, 12, 1, 1);
     margin: 15px 0;
+
 }
 
 .take_button_div {
@@ -491,16 +504,22 @@ main {
     background-color: black;
 }
 
+.lollibtn:hover{
+     transform: scale(1.05);
+  z-index: 10;
+}
 
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
         gap: 20px;
+         
     }
 
     .navlist {
         flex-direction: column;
         gap: 15px;
+        
     }
 
     main {
@@ -530,8 +549,9 @@ main {
         width: 100%;
     }
 
-    .lollibtn {
+    .lollibtn:hover{
         width: 50%;
+        
     }
 
     .menu-description, .contact-description {

@@ -257,74 +257,95 @@ main {
     color: rgba(255, 255, 255, 1);
 }
 
-.menu-section {
-    padding: 50px 0;
+
+
+
+
+
+
+.food-section{
+    width:100%;
+    padding:80px 10%;
+    text-align:center;
 }
 
-.menu-header {
-    text-align: center;
-    margin-bottom: 30px;
+.subtitle{
+    color:#d97706;
+    letter-spacing:4px;
+    margin-bottom:10px;
 }
 
-.menu-title {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 100%;
-    letter-spacing: 20%;
-    color: rgba(220, 120, 11, 1);
-    margin-bottom: 10px;
+.food-section h1{
+    font-size:55px;
+    margin-bottom:20px;
+    color:#111;
 }
 
-.menu-subtitle {
-    font-weight: 700;
-    font-size: 31.25px;
-    line-height: 100%;
-    color: rgba(21, 12, 1, 1);
-    margin-bottom: 10px;
+.description{
+    max-width:800px;
+    margin:0 auto 60px;
+    font-size:25px;
+    line-height:1.8;
+    color:#333;
 }
 
-.menu-description {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: rgba(21, 12, 1, 1);
-    width: 53%;
-    margin: 0 auto;
+.food-cards{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+    margin-bottom:50px;
 }
 
-.menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 20px;
+.card{
+    width:260px;
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
 }
 
-.menu_item_name_div {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.card:hover{
+    transform:translateY(-10px);
 }
 
-.menu-item {
-    width: 32%;
-    border: 1px solid #ddd;
-    padding: 10px;
-    border-radius: 15px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
 }
 
-.menu-item img {
-    width: 100%;
-    height: 200px;
-    border-radius: 10px;
+.card h3{
+    font-size:28px;
+    margin:15px 0 10px;
 }
 
-.menu-item h3 {
-    font-size: 18px;
-    margin: 10px 0;
+.card p{
+    padding:0 15px 20px;
+    color:#555;
+    font-size:18px;
 }
+
+button{
+    padding:18px 45px;
+    background:#d97706;
+    color:#fff;
+    border:none;
+    font-size:20px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#b85f00;
+}
+
+
+
+
+
+
 
 .price {
     color: green;
